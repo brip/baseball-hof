@@ -174,7 +174,7 @@
                         <h2>Neutral Networks: Results</h2>
                         <h3>Accuracy</h3>
                         <iframe width="800" height="400" title="Neural Network Confusion Matrix" src="/Users/brianripley/Documents/GitHub/baseball-hof/app/static/nn_acc.html"></iframe>
-                        <p class="lead">We get a recall of 44.7%, the same as for SVM when optimizing parameters for recall. This is not bad considering how little time was spent developing the neural networ, only two layers. There is certainly room for improvement here.</p>
+                        <p class="lead">We get a recall of 44.7%, the same as for SVM when optimizing parameters for recall. This is not bad considering how little time was spent developing the neural network, only two layers. There is certainly room for improvement here.</p>
                     </div>
                 </div>
             </div>
@@ -189,17 +189,7 @@
                     </div>
                     <div class="col-lg-8">
 
-                        <p class="lead"> We see that all of our models perform decently well when using accuracy as the metric. <br> </p>
-                
-                        <div class="qtn">
-                            <div class="frac">
-                              <div class="numer">true positives</div>
-                              <div class="denom">true positives + false negatives</div>
-                              <br>
-                            </div>
-                        </div>
-
-                        <p class="lead"> <br> In conclusion, neural networks clearly performed the best on our dataset for predicting GDP per capita. Positively correlated features like height and phone usage along with negatively correlated features like birthrate and agriculture helped us achieve these results. </p>
+                        <p class="lead"> We see that all of our models perform decently well when using accuracy as the metric. However, we saw that accuracy may not the best metric to use when we have such a high class imbalance. Optimizing for recall is the better choice here because we have so few Hall of Famers. Recall was improved for the three main models when the grid search used it to score instead of accuracy. However, the best recall was still only 44.6%, achieved by both SVM and the Neural Network. <br><br> This project has plenty of room for improvement. There likely needs to be a better choice of features to improve scoring. Data from other datasets on Lahman's database could prove useful. For instance, this analysis neglected all postseason stats and All Star selections. These two features could be much more deterministic of a Hall of Fame player than other features that were included. Our models may have also been thrown off by players such as Pete Rose and Barry Bonds who are clear shoo-in Hall of Famers by their statistics. However, their use of steroids cost them induction into the Hall. Another possible feature to include would be use of steroids, so the models can discern why these two players were not inducted. <br><br> Regardless, this project showcases the importance of choosing a proper metric during model selection. It also demonstrates how much can be learned from data visualization, including insight that may not be possible through querying. We also see the great importance of feature selection. Similar results could likely be achieved through only several factors, such as batting average, home runs, postseason games, world series titles and all star appearances. So much to learn from, and space for improvement or extension on this project! </p>
 
                     </div>
                 </div>
