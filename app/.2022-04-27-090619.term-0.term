@@ -1,0 +1,8 @@
+]0;~/baseball-hof/app[01;34m~/baseball-hof/app[00m$ [K]0;~/baseball-hof/app[01;34m~/baseball-hof/app[00m$ cd root
+bash: cd: root: No such file or directory
+]0;~/baseball-hof/app[01;34m~/baseball-hof/app[00m$ cd.[K ..
+]0;~/baseball-hof[01;34m~/baseball-hof[00m$ cd root
+bash: cd: root: No such file or directory
+]0;~/baseball-hof[01;34m~/baseball-hof[00m$ docker build -t omni .
+bash: docker: command not found
+]0;~/baseball-hof[01;34m~/baseball-hof[00m$ ]0;~/baseball-hof/app[01;34m~/baseball-hof/app[00m$ [K]0;~/baseball-hof/app[01;34m~/baseball-hof/app[00m$ 
